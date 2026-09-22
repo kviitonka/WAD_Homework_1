@@ -10,15 +10,113 @@
   <body>
 
     <header>
-        <nav>
+        <nav> <!--navigation links-->
         <a href="index.html">Home</a>
         <a href="addPost.html">Add Post</a>
         </nav>
-
-        <a href="login.html" class="avatar" aria-label="Account"></a>
+        <a href="login.html" class="avatar" aria-label="Account">&#128100;</a>
     </header>
 
-  </body>
+    <main>
+        <section class="feed" aria-label="Posts">
+            <article class="post">
+                <div class="post-header">
+                    <span class="avatar">&#128100;</span>
+                    <strong>Ana</strong>
+                    <time datetime="2026-10-01">October 1, 2026</time>
+                </div>
 
+                <div class="post-body">
+                    <img src="" alt="Town Hall Square in Tartu" /> <!-- image of Tartu -->
+                    <p>Beautiful day in Tartu! #Tartu #Estonia</p>
+                </div>
 
+                <div class="post-footer">
+                    <button class="like-btn" type="button">&#128077; Like</button>
+                    <span class="like-count">5</span>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post-header">
+                    <span class="avatar">&#128100;</span>
+                    <strong>Mark</strong>
+                    <time datetime="2026-10-02">October 2, 2026</time>
+                </div>
+
+                <div class="post-body">
+                    <p>Does anyone know which room the lab is in today?</p>
+                </div>
+
+                <div class="post-footer">
+                    <button class="like-btn" type="button">&#128077; Like</button>
+                    <span class="like-count">8</span>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post-header">
+                    <span class="avatar">&#128100;</span>
+                    <strong>Emma</strong>
+                    <time datetime="2026-10-03">Oct 3, 2026</time>
+                </div>
+                <div class="post-body">
+                    <img src="" alt="University library" /> <!-- image of a library -->
+                    <p>Finally found a quiet corner in the library for the numerical methods assignment.</p>
+                </div>
+                <div class="post-footer">
+                    <button class="like-btn liked" type="button">&#128077; Liked</button>
+                    <span class="like-count">12</span>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post-header">
+                    <span class="avatar">&#128100;</span>
+                    <strong>John</strong>
+                    <time datetime="2026-10-04">Oct 4, 2026</time>
+                </div>
+                <div class="post-body">
+                    <img src="" alt="Coffee on a desk" /> <!-- image of coffee-->
+                    <p>Coffee break between lectures, campus is looking great this week.</p>
+                </div>
+                <div class="post-footer">
+                    <button class="like-btn" type="button">&#128077; Like</button>
+                    <span class="like-count">15</span>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post-header">
+                    <span class="avatar">&#128100;</span>
+                    <strong>Lisa</strong>
+                    <time datetime="2026-10-05">Oct 5, 2026</time>
+                </div>
+                <div class="post-body">
+                    <p>Does anyone want to form a study group for the upcoming exam?</p>
+                </div>
+                <div class="post-footer">
+                    <button class="like-btn" type="button">&#128077; Like</button>
+                    <span class="like-count">3</span>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PostIt - WAD homework</p>
+    </footer>
+
+    <script>
+        // Like button toggle
+        document.querySelectorAll('.like-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('liked');
+                btn.textContent = btn.classList.contains('liked') ? '👍 Liked' : '👍 Like';
+            });
+        });
+    </script>
+
+</body>
 </html>
