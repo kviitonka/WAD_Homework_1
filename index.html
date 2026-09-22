@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="post-footer">
-<button class="like-btn" type="button" data-likes="4">👍 4</button>                    <span class="like-count">5</span>
+                    <button class="like-btn" type="button" data-likes="4">👍 4</button>
                 </div>
             </article>
 
@@ -48,8 +48,7 @@
                 </div>
 
                 <div class="post-footer">
-                    <button class="like-btn" type="button" data-likes="8">&#128077; Like</button>
-                    <span class="like-count">8</span>
+                    <button class="like-btn" type="button" data-likes="8">👍 8</button>
                 </div>
             </article>
 
@@ -64,8 +63,7 @@
                     <p>Finally found a quiet corner in the library for doing assignments.</p>
                 </div>
                 <div class="post-footer">
-                    <button class="like-btn liked" type="button" data-likes="12">&#128077; Liked</button>
-                    <span class="like-count">12</span>
+                    <button class="like-btn liked" type="button" data-likes="12">👍 12</button>
                 </div>
             </article>
 
@@ -80,8 +78,7 @@
                     <p>Coffee break between lectures, campus is looking great this week.</p>
                 </div>
                 <div class="post-footer">
-                    <button class="like-btn" type="button" data-likes="15">&#128077; Like</button>
-                    <span class="like-count">15</span>
+                    <button class="like-btn" type="button" data-likes="15">👍 15</button>
                 </div>
             </article>
 
@@ -95,8 +92,7 @@
                     <p>Does anyone want to form a study group for the upcoming exam?</p>
                 </div>
                 <div class="post-footer">
-                    <button class="like-btn" type="button" data-likes="3">&#128077; Like</button>
-                    <span class="like-count">3</span>
+                    <button class="like-btn" type="button" data-likes="3">👍 3</button>
                 </div>
             </article>
 
@@ -115,9 +111,9 @@
 
             btn.addEventListener('click', () => {
                 liked = !liked;
-                count += liked ? 1 : -1; <!--increments on like, decrements on unlike-->
+                count += liked ? 1 : -1; // increments on like, decrements on unlike
                 btn.classList.toggle('liked', liked);
-                btn.textContent =  '👍 ${count}';
+                btn.textContent =  `👍 ${count}`;
             });
         });
     </script>
