@@ -62,7 +62,7 @@
                 </div>
                 <div class="post-body">
                     <img src="" alt="University library" /> <!-- image of a library -->
-                    <p>Finally found a quiet corner in the library for the numerical methods assignment.</p>
+                    <p>Finally found a quiet corner in the library for doing assignments.</p>
                 </div>
                 <div class="post-footer">
                     <button class="like-btn liked" type="button">&#128077; Liked</button>
@@ -111,8 +111,13 @@
     <script>
         // Like button toggle
         document.querySelectorAll('.like-btn').forEach(btn => {
+            let liked = false;
+            let count = 0; <!--starting like count-->
+
             btn.addEventListener('click', () => {
-                btn.classList.toggle('liked');
+                liked = !liked;
+                count += liked ? 1 : -1; <!--increments on like, decrements on unlike-->
+                btn.classList.toggle('liked', liked);
                 btn.textContent = btn.classList.contains('liked') ? '👍 Liked' : '👍 Like';
             });
         });
