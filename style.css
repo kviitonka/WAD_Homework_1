@@ -1,7 +1,7 @@
+/*login.html style*/
 .blue {
     color: cyan;
 }
-
 @media (min-width: 800px) {
     .box {
         background-color: salmon;
@@ -10,8 +10,6 @@
         align-items: center;
     }
 }
-
-
 @media (min-width: 800px) {
     .home {
         background-color: salmon;
@@ -22,4 +20,10 @@
         align-items: left;
         margin: 30px;
     }
+}
+@media (min-width: 800px) {
+    .image {
+        align-items: right;
+    }
+    
 }
