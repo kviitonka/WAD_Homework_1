@@ -1,0 +1,32 @@
+* {
+    font: Roboto;
+}
+
+.blue {
+    color: deepskyblue;
+}
+
+.body {
+    width: 300px;
+    background-color: lightpink;
+    padding: 15px;
+    align-items: right;
+    margin: 30px;
+    border-radius: 25px;
+}
+
+header {
+    background-color: lightpink;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 25px;
+}
+
+img {
+    align-items: right;
+}
+
+.logInButton {
+    background-color: darkblue;
+    color: white;
+}
