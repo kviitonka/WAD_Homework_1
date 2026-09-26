@@ -1,37 +1,29 @@
 * {
-    font: Block;
+    font: Roboto;
 }
 
 .blue {
     color: deepskyblue;
 }
 
-@media (min-width: 800px) {
-    .box {
-        background-color: lightpink;
-        padding: 15px;
-        flex-direction: row;
-        align-items: center;
-    }
+.body {
+    width: 300px;
+    background-color: lightpink;
+    padding: 15px;
+    align-items: right;
+    margin: 30px;
+    border-radius: 25px;
 }
 
-@media (min-width: 800px) {
-    .home {
-        background-color: lightpink;
-        border: 30px;
-        border-color: white;
-        padding: 15px;
-        flex-direction: column;
-        align-items: left;
-        margin: 30px;
-    }
+header {
+    background-color: lightpink;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 25px;
 }
 
-@media (min-width: 800px) {
-    .image {
-        align-items: right;
-    }
-    
+img {
+    align-items: right;
 }
 
 .logInButton {
