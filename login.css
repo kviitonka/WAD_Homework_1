@@ -1,29 +1,47 @@
 * {
-    font: Roboto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .blue {
     color: deepskyblue;
 }
 
-.body {
+.body2 {
     width: 300px;
     background-color: lightpink;
     padding: 15px;
-    align-items: right;
     margin: 30px;
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
+
+html body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 header {
     background-color: lightpink;
     padding: 15px;
     margin: 5px;
     border-radius: 25px;
+    flex-direction: column;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
 }
 
-img {
-    align-items: right;
+.image {
+    right: 4px;
+    display: block;
 }
 
 .logInButton {
