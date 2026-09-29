@@ -18,11 +18,17 @@
     align-items: center;
 }
 
-html body {
-    /* display: flex; */
+body {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+article > form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 header {
@@ -46,6 +52,10 @@ header a {
     font-weight: 600;
     transition: background-color 0.25s ease;
     font-size: 20px;
+}
+
+header a:hover{
+    background-color: #82ddae;
 }
 
 .image {
