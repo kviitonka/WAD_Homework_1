@@ -1,42 +1,18 @@
+/*font for the entire page*/
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.blue {
-    color: deepskyblue;
-}
 
-.body2 {
-    width: 300px;
-    background-color: lightpink;
-    padding: 15px;
-    margin: 30px auto;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-    text-align: center;
-}
-
-article > form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-    width: 100%;
-}
+/*style for the menu bar*/
 
 header {
     background-color: lightpink;
     padding: 15px;
     margin: 5px;
     border-radius: 25px;
-    flex-direction: column;
-    top: 0;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
@@ -56,9 +32,23 @@ header a:hover{
     background-color: #82ddae;
 }
 
-.image {
-    right: 4px;
-    display: block;
+
+/*style for the login box*/
+
+.blue {
+    color: deepskyblue;
+}
+
+form {
+    width: 300px;
+    background-color: lightpink;
+    padding: 15px;
+    margin: 30px auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
 }
 
 .logInButton {
